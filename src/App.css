@@ -1,38 +1,315 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.Container{
+  z-index: 0;
+  
+  width: 300px;
+  height: 300px;
+  border: 3px solid #555 ;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+}
+
+.middlepoint{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 137px;
+  left: 137px;
+  z-index: 10;
+}
+
+.scalebar{
+  width: 8px;
+  height: 280px;
+  background-color: black;
+  position: absolute;
+  left: 143px;
+  top: 7px;
+  transform: rotate(-90deg);
+}
+
+.scalebar-1{
+  transform: rotate(-90deg);
+}
+.scalebar-2{
+  transform: rotate(-80deg);
+}
+.scalebar-3{
+  transform: rotate(-70deg);
+}
+.scalebar-4{
+  transform: rotate(-60deg);
+}
+.scalebar-5{
+  transform: rotate(-50deg);
+}
+.scalebar-6{
+  transform: rotate(-40deg);
+}
+.scalebar-7{
+  transform: rotate(-30deg);
+}
+.scalebar-8{
+  transform: rotate(-20deg);
+}
+.scalebar-9{
+  transform: rotate(-10deg);
+}
+.scalebar-10{
+  transform: rotate(0deg);
+}
+.scalebar-11{
+  transform: rotate(10deg);
+}
+.scalebar-12{
+  transform: rotate(20deg);
+}
+.scalebar-13{
+  transform: rotate(30deg);
+}
+.scalebar-14{
+  transform: rotate(40deg);
+}
+.scalebar-15{
+  transform: rotate(50deg);
+}
+.scalebar-16{
+  transform: rotate(60deg);
+}
+.scalebar-17{
+  transform: rotate(70deg);
+}
+.scalebar-18{
+  transform: rotate(80deg);
+}
+.scalebar-19{
+  transform: rotate(90deg);
+  height: 244px;
+  top: 25px;
+  left: 161px;
+}
+
+
+.scalebar-1.active{
+  background-color: rgb(131, 66, 77);
+}
+.scalebar-2.active{
+  background-color: rgb(147, 33, 52);
+}
+.scalebar-3.active{
+  background-color: rgb(167, 9, 35);
+}
+.scalebar-4.active{
+  background-color: rgb(112, 10, 27);
+}
+.scalebar-5.active{
+  background-color: rgb(216, 7, 42);
+}
+.scalebar-6.active{
+  background-color: rgb(38, 105, 66);
+}
+.scalebar-7.active{
+  background-color: rgb(23, 218, 88);
+}
+.scalebar-8.active{
+  background-color: rgb(5, 184, 74);
+}
+.scalebar-9.active{
+  background-color: rgb(5, 131, 35);
+}
+.scalebar-10.active{
+  background-color: rgb(9, 114, 34);
+}
+.scalebar-11.active{
+  background-color: rgb(173, 210, 8);
+}
+.scalebar-12.active{
+  background-color: rgb(110, 125, 10);
+}
+.scalebar-13.active{
+  background-color: rgb(176, 205, 11);
+}
+.scalebar-14.active{
+  background-color: rgb(189, 171, 11);
+}
+.scalebar-15.active{
+  background-color: rgb(171, 212, 7);
+}
+.scalebar-16.active{
+  background-color: rgb(51, 28, 77);
+}
+.scalebar-17.active{
+  background-color: rgb(61, 18, 216);
+}
+.scalebar-18.active{
+  background-color: rgb(22, 22, 221);
+}
+.scalebar-19.active{
+  background-color: rgb(71, 7, 183);
+}
+
+
+.scalebar-hide{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  z-index: 9;
+}
+
+.scalebar-bottom-hide{
+  width: 320px;
+  height: 250px;
+  background-color:white;
+  position: absolute;
+  z-index: 11;
+  top: 160px;
+  left: -14px;
+  border-top: 1px solid black;
+}
+
+.arrow-container{
+    width: 160px;
+    height: 160px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 12;
+    top: 67px;
+    left: 67px;
+}
+
+.arrow-wrap{
+  width: 160px;
+    height: 160px;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.arrow{
+  width: 110px;
+  height: 4px;
+  background-color: purple;
+  position: absolute;
+  top: 78px;
+  left: -30px;
+}
+
+.speed-0{
+  transform: rotate(0deg);
+}
+.speed-10{
+  transform: rotate(0deg);
+}
+.speed-20{
+  transform: rotate(0deg);
+}
+.speed-30{
+  transform: rotate(0deg);
+}
+.speed-40{
+  transform: rotate(0deg);
+}
+.speed-50{
+  transform: rotate(0deg);
+}
+.speed-60{
+  transform: rotate(60deg);
+}
+.speed-70{
+  transform: rotate(70deg);
+}
+.speed-80{
+  transform: rotate(80deg);
+}
+.speed-90{
+  transform: rotate(90deg);
+}
+.speed-100{
+  transform: rotate(100deg);
+}
+.speed-110{
+  transform: rotate(110deg);
+}
+.speed-120{
+  transform: rotate(120deg);
+}
+.speed-130{
+  transform: rotate(130deg);
+}
+.speed-140{
+  transform: rotate(140deg);
+}
+.speed-150{
+  transform: rotate(150deg);
+}
+.speed-160{
+  transform: rotate(160deg);
+}
+.speed-170{
+  transform: rotate(170deg);
+}
+.speed-180{
+  transform: rotate(180deg);
+}
+
+.accelate-container{
+  margin-top: 120px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.accelate-container button{
+  width: 200px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px #c6c6c6;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.accelate-container button:active{
+  box-shadow: 5px 5px 5px #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.increase{
+  background-color: green;
 }
+.decrease{
+  background-color: red;
+}
+
+.text{
+  width: 180px;
+  position: absolute;
+  z-index: 20;
+  left: 58px;
+  top: 90px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.static{
+  font-size: 18px;
+}
+.unit{
+  margin-left: 10px;
+}
+
